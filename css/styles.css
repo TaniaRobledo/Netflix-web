@@ -10,3 +10,28 @@ body{
 .contenedor{
     margin: 0 auto;
 }
+
+.header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    margin-top: 200px;
+}
+
+.container_image-nav{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+}
+
+.image_nav{
+
+    width: 100%;
+}
