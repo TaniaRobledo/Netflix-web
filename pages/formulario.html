@@ -5,270 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./output.css">
   <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/formulario.css">
   <title>Netflix España</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="contenedor">
+<body class="bg-[url('../assets/images/fondo_register.jpg')] bg-cover bg-center min-h-screen text-white">
+  <!-- Contenedor Principal -->
+  <div class="flex flex-col min-h-screen">
     <!-- Encabezado -->
-    <header class="header">
-
-      <!-- Parte Izquierda:  agrupo el logo , botón e input-->
-      <div class="header__left">
-        <img class="header__logo" src="../assets/images/logo.png" alt="logo" /></a>
-        <!-- <img src="imagenes/btnhamburguesa.png" alt="menu hamburguesa" /> -->
-        <!-- Finput busqueda -->
-        <input class="header__input" type="text" placeholder=" Busca en PcComponetes..." />
-      </div>
-
-      <!-- Parte Derecha -->
-      <div class="header__right">
-        <article class="article-header">
-          <div class="article-header__texts">
-            <p class="article-header__text negrita">Hazte</p>
-            <p class="article-header__text article-header__text--orange negrita">Premium</p>
-          </div>
-          <img class="article-header__icon" src="imagenes/icono.png" alt="icono" />
-        </article>
-
-        <article class="article-header">
-          <div class="article-header__texts">
-            <div class="article-header__text negrita">Mi Cuenta</div>
-            <div class="article-header__text">riberadeltajo@</div>
-          </div>
-          <img class="article-header__icon" src="imagenes/usuario.png" alt="usuario" />
-        </article>
-
-        <article class="article-header">
-          <div class="article-header__texts">
-            <div class="article-header__text ">Mi</div>
-            <div class="article-header__text">carrito</div>
-          </div>
-          <img class="premium__icon" src="imagenes/carrito.png" alt="carrito" />
-        </article>
-      </div>
+    <header class="p-4">
+      <h1 class="text-3xl font-bold w-17"><img src="../assets/images/logo.png" alt="logo"></h1>
     </header>
 
-
-    <!-- Cuepo principal -->
-    <main class="main">
-      <!-- menu-->
-      <aside class="main__menu">
-        <p class="main__barra-menu">todas las secciones</p>
-
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/cybermonday.png" />
-              <a class="nav__link" href="#"> Cyber Monday 2022</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/componentes.png" />
-              <a class="nav__link" href="#">Componentes</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/ordenadores.png" />
-              <a class="nav__link" href="#">Ordenadores</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/smarthome.png" />
-              <a class="nav__link" href="#">Smartphones / Telefonía</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/audio.png" />
-              <a class="nav__link" href="#">Audio / Foto / Video</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/perifericos.png" />
-              <a class="nav__link" href="#">Periféricos</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/televisores.png" />
-              <a class="nav__link" href="#">Televisores</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/tablets.png" />
-              <a class="nav__link" href="#">Tablets / Ebooks</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/consolas.png" />
-              <a class="nav__link" href="#">Consolas / Consumibles</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/smarthome.png" />
-              <a class="nav__link" href="#">Smarthome</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/electrodomesticos.png" />
-              <a class="nav__link" href="#">Electromésticos / Hogar</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/cuidatopersonal.png" />
-              <a class="nav__link" href="#">Cuidado Personal</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/redes.png" />
-              <a class="nav__link" href="#">Redes</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/cables.png" />
-              <a class="nav__link" href="#">Cables</a>
-            </li>
-            <li class="nav__item">
-              <img class="nav__icon" src="imagenes/menu/ocio.png" />
-              <a class="nav__link" href="#">Ocio</a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-
-      <!-- Contenidos -->
-      <section class="main__visor">
-        <div class="main__barra-section">
-          <span> Tu <span class="negrita"> tienda de tecnología online </span> líder por precio, calidad y servicio
-          </span>
-
-          <span>Cyber Monday 2022</span>
+    <!-- Contenedor Central -->
+    <div class="flex flex-grow items-center justify-center">
+      <!-- Formulario -->
+      <form class="flex flex-col items-center bg-black bg-opacity-30 p-6 rounded-lg shadow-md w-full max-w-sm">
+        <h2 class="text-2xl font-bold mb-5">Iniciar sesión</h2>
+        <input 
+          type="text" 
+          placeholder="Correo o número de móvil" 
+          class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-red-500 text-black"
+          required
+        >
+        <input 
+          type="password" 
+          placeholder="Contraseña" 
+          class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-red-500 text-black"
+          required
+        >
+        <button 
+          type="submit" 
+          class="w-full bg-red-600 text-white p-3 rounded-lg font-semibold mb-3 hover:bg-red-700 transition"
+        >
+          Iniciar sesión
+        </button>
+        <p class="p-2 text-white">O</p>
+        <button 
+          type="button" 
+          class="w-full bg-gray-600 text-white p-3 rounded-lg font-semibold mb-3 hover:bg-gray-700 transition"
+        >
+          Usar un código de sesión
+        </button>
+        <a href="#" class="text-blue-600 text-sm mb-4 hover:underline">¿Has olvidado tu contraseña?</a>
+        <div class="flex items-center w-full mb-4">
+          <input 
+            type="checkbox" 
+            id="recuerdame" 
+            class="mr-2 rounded"
+          >
+          <label for="recuerdame" class="text-sm text-gray-300">Recuérdame</label>
         </div>
-
-        <section class="container-form">
-          <!-- Formulario de Registro de Usuario -->
-          <section class="section-form">
-
-            <form action="" class="form">
-              <label for="" class="form__label">Nombre y Apellidos</label>
-              <input type="text" name="nombre_apellidos" class="form__input" placeholder="Nombre y apellidos">
-
-              <label for="" class="form__label">Dirección</label>
-              <input type="text" name="direccion" class="form__input" placeholder="Dirección">
-
-              <div class="form__flex">
-                <div class="form__double">
-                  <label for="" class="form__label">Población</label>
-                  <input type="text" name="poblacion" class="form__input" placeholder="Población">
-                </div>
-
-                <div class="form__double">
-                  <label for="" class="form__label">Provincia</label>
-                  <select name="provincia" class="form__input" placeholder="Provincias">
-                    <option value="provincia1">Provincia 1</option>
-                    <option value="provincia2">Provincia 2</option>
-                    <option value="provincia3">Provincia 3</option>
-                    <option value="provincia4">Provincia 4</option>
-                    <option value="provincia5">Provincia 5</option>
-                  </select>
-                </div>
-              </div>
-
-              <label for="" class="form__label form__label--double">Correo</label>
-              <input type="email" name="correo" class="form__input" placeholder="Correo">
-
-              <div class="form__flex">
-                <div class="form__double">
-                  <label for="" class="form__label">Usuario</label>
-                  <input type="text" name="usuario" class="form__input" placeholder="usuario">
-                </div>
-
-                <div class="form__double">
-                  <label for="" class="form__label">Contraseña</label>
-                  <input type="password" name="password" class="form__input" placeholder="**************">
-                </div>
-              </div>
-
-              <div class="form__flex">
-                <div class="form__double">
-                  <label for="" class="form__label">Fecha Pedido</label>
-                  <input type="date" name="fecha_pedido" class="form__input">
-                </div>
-
-                <div class="form__double">
-                  <label for="" class="form__label">Fecha Entrega</label>
-                  <input type="date" name="fechc_entrega" class="form__input">
-                </div>
-              </div>
-
-
-
-              <label class="form_label--check">
-                <input type="checkbox">
-                Acepto términos y condiciones de uso
-              </label>
-
-              <input type="submit" class="form__button" value="Enviar...">
-            </form>
-          </section>
-
-          <section class="imagen">
-            <img class="imagen__img" src="./imagenes/lateral.svg" alt="">
-          </section>
-        </section>
-
-
-
-        <!-- Fin de los articulos-->
-      </section>
-    </main>
-
-
-    <footer class="footer">
-      <section class="footer__container">
-        <article class="box-footer">
-          <h4 class="box-footer__title">Por qué comprar</h4>
-          <ul class="box-footer__list">
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Premium</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Cómo comprar</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Formas de pago</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Gastos de envío</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Cupones descuento</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Preguntas frecuentes</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Opiniones de clientes</a></li>
-          </ul>
-        </article>
-
-        <article class="box-footer">
-          <h4 class="box-footer__title">Quiénes somos</h4>
-          <ul class="box-footer__list">
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Nuestras tiendas</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Condiciones de compra</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Formas de Marcas</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Afiliados</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Centros educativos</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Aviso legal</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Privacidad</a></li>
-          </ul>
-        </article>
-
-        <article class="box-footer">
-          <h4 class="box-footer__title">Contactar</h4>
-          <ul class="box-footer__list">
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Centro de soporte</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Contacto</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Devoluciones y Garantías</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Opina y Gana</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Publicidad</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Trabaja con nosotros</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Política de cookies</a></li>
-          </ul>
-        </article>
-
-        <article class="box-footer">
-          <h4 class="box-footer__title">Otros</h4>
-          <ul class="box-footer__list">
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Outlet</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Black Friday</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Cyber Monday</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">PcDays</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Marketplace</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Servicio de reparaciones</a></li>
-            <li class="box-footer__item"><a class="box-footer__link" href="#">Concursos</a></li>
-          </ul>
-        </article>
-      </section>
-      <hr class="footer__line">
-      <div class="footer__footer"> PcComponentes - &copy; IES Ribera del Tajo 2022 </div>
-
-    </footer>
-
+        <p class="text-sm text-gray-300 mb-2">
+          ¿Todavía sin Netflix? 
+          <a href="#" class="text-blue-600 hover:underline">Suscríbete ya</a>.
+        </p>
+        <p class="text-xs text-gray-400 text-center">
+          Esta página utiliza Google reCAPTCHA para garantizar que no eres un robot. 
+          <a href="#" class="text-blue-600 hover:underline">Más información</a>.
+        </p>
+      </form>
+    </div>
   </div>
 </body>
 </html>
