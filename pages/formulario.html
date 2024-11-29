@@ -14,25 +14,25 @@
   <!-- Contenedor Principal -->
   <div class="flex flex-col min-h-screen">
     <!-- Encabezado -->
-    <header class="p-4">
-      <h1 class="text-3xl font-bold w-17"><img src="../assets/images/logo.png" alt="logo"></h1>
-    </header>
+    <header class="p-2 ml-40">
+    <a href="../src/index.html"><img src="../assets/images/logo.png" alt="logo" style="width: 200px;"></h1>
+      </header></a>
 
-    <!-- Contenedor Central -->
+    <!-- Contenedor Central del formulario-->
     <div class="flex flex-grow items-center justify-center">
       <!-- Formulario -->
-      <form class="flex flex-col items-center bg-black bg-opacity-30 p-6 rounded-lg shadow-md w-full max-w-sm">
+      <form class="flex flex-col items-center justify-center bg-black bg-opacity-80 p-6 rounded-lg shadow-md w-full max-w-sm">
         <h2 class="text-2xl font-bold mb-5">Iniciar sesión</h2>
         <input 
           type="text" 
           placeholder="Correo o número de móvil" 
-          class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-red-500 text-black"
+          class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-red-500 text-white bg-black bg-opacity-70"
           required
         >
         <input 
           type="password" 
           placeholder="Contraseña" 
-          class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-red-500 text-black"
+          class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-red-500 text-white bg-black bg-opacity-70"
           required
         >
         <button 
@@ -66,7 +66,41 @@
           <a href="#" class="text-blue-600 hover:underline">Más información</a>.
         </p>
       </form>
+      <!-- contenedor del formulario -->
     </div>
+
+    <!-- footer -->
+    <!-- footer -->
+<footer class="bg-black text-white py-8" style="height: 300px;">
+  <div class="container mx-auto px-4 lg:px-20 flex flex-col md:flex-row justify-evenly items-end md:items-start space-y-8 md:space-y-0">
+    <!-- Primera columna -->
+    <div class="space-y-2 text-center md:text-left flex flex-col text-base">
+      <p>¿Preguntas? Llama al <a href="tel:900-759-106" class="hover:underline">900-759-106</a></p>
+      <a href="#" class="text-sm underline">Preguntas frecuentes</a>
+      <a href="#" class="text-sm underline">Preferencias de cookies</a>
+    </div>
+
+    <!-- Segunda columna -->
+    <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
+      <a href="#">Centro de ayuda</a>
+      <a href="#">Información corporativa</a>
+    </div>
+
+    <!-- Tercera columna -->
+    <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
+      <a href="#">Términos de uso</a>
+      <a href="#">Opciones de anuncios</a>
+    </div>
+
+    <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
+      <a href="#">Privacidad</a>
+    </div>
+  </div>
+</footer>
+
+    
+
+    <!-- contenedor principal -->
   </div>
 </body>
 </html>
