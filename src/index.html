@@ -48,15 +48,90 @@
       </ul>
     </nav>
 
-    <!-- contenidos -->
+    <!-- contenidos en main-->
      <main>
+      <!-- foto -->
       <div class="container_image-nav justify-center items-center mx-auto">
       <img class="image_nav" src="../assets/images/fondo nav.jpg" alt="">
     </div>
+
+
+<!-- suscripcion -->
+  <div class="flex justify-center items-center">
+    <div class="suscripcion flex justify-center items-center m-6 w-[600px]">
+        <p class="text-white text-center p-0 m-0">
+        ¿Quieres ver algo ya? Escribe tu dirección de correo para crear una suscripción a Netflix o reactivarla
+        </p>
+    </div>
+  </div>
+
+  <!-- correo electronico -->
+  <div class="flex justify-center items-center m-4">
+    <div class="flex space-x-4">
+      <!-- Input de correo electrónico -->
+      <input 
+        type="email" 
+        placeholder="Correo electrónico" 
+        class="p-4 rounded-lg bg-black text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white w-[400px]"
+      />
+      
+      <!-- Botón Empezar -->
+      <button class="p-2 bg-red-700 text-xl text-white rounded-lg hover:bg-red-800 focus:outline-none w-[200px]">
+        Empezar >
+      </button>
+    </div>
+  </div>
+
+  <div class="flex justify-center items-center mt-10">
+    <!-- Mas informacion -->
+    <div class="flex justify-between items-center h-20 bg-gray-400 bg-opacity-40 p-6 flex-col sm:flex-row w-[1200px] rounded-lg transform transition duration-300 hover:scale-105">
+      <!-- Texto de la izquierda -->
+      <div class="text-white space-y-2">
+        <p class="text-2xl">Todo lo que te encanta de Netflix por solo 6,99 €.</p>
+        <p>Ahorra viendo Netflix con algunas pausas publicitarias.</p>
+      </div>
+    
+      <!-- Enlace de más información -->
+      <a href="../pages/informacion.html" class="mt-4 sm:mt-0 bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800  border border-white">
+        Más información
+      </a>
+    </div>
+  </div>
+  
+  
+
+  <!-- contenidos en main -->
      </main>
 
 
-
+   <!-- footer -->
+   <footer class="bg-black text-white py-8" style="height: 300px;">
+    <div class="container mx-auto px-4 lg:px-20 flex flex-col md:flex-row justify-evenly items-end md:items-start space-y-8 md:space-y-0">
+      <!-- Primera columna -->
+      <div class="space-y-2 text-center md:text-left flex flex-col text-base">
+        <p>¿Preguntas? Llama al <a href="tel:900-759-106" class="hover:underline">900-759-106</a></p>
+        <a href="#" class="text-sm underline">Preguntas frecuentes</a>
+        <a href="#" class="text-sm underline">Preferencias de cookies</a>
+      </div>
+  
+      <!-- Segunda columna -->
+      <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
+        <a href="#">Centro de ayuda</a>
+        <a href="#">Información corporativa</a>
+      </div>
+  
+      <!-- Tercera columna -->
+      <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
+        <a href="#">Términos de uso</a>
+        <a href="#">Opciones de anuncios</a>
+      </div>
+  
+      <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
+        <a href="#">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+  
 
 
   </div>
