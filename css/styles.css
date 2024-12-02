@@ -12,15 +12,17 @@ body{
 }
 
 .header{
-    position: fixed;
-    top: 0;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav{
-    margin-top: 200px;
+    z-index: 1;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 40px;
 }
 
 .container_image-nav{

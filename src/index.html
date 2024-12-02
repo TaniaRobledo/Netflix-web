@@ -16,44 +16,59 @@
     <header class="header flex justify-between items-center">
 
       <!-- Parte Izquierda: logot-->
-      <div class="header__left">
-        <img class="header__logo w-17" src="../assets/images/logo.png" alt="logo" /></a>
+      <div class="header__left fixed top-0 left-0 z-50 p-4">
+        <img class="header__logo w-[200px]" src="../assets/images/logo.png" alt="logo" />
       </div>
+      
 
       <!-- Parte Derecha botones-->
-      <div class="header__right flex  gap-4">
-            <button class="article-header__text negrita border  rounded-md px-4 py-2 text-white">Español</p>
-            <a href="../pages/formulario.html"><button class="article-header__text article-header__text--orange negrita border bg-white rounded-md px-4 py-2">Iniciar sesion</p></a>
-          </div>
+      <div class="header__right flex fixed top-0 right-0 z-50 p-4 gap-4">
+        <button class="article-header__text negrita border rounded-md px-4 py-2 text-white">Español</button>
+        <a href="../pages/formulario.html">
+          <button class="article-header__text article-header__text--orange negrita border bg-white rounded-md px-4 py-2">Iniciar sesión</button>
+        </a>
       </div>
+      
     </header>
 
     <!-- Nav -->
-     
+  <!-- Nav -->
+<nav class="nav mx-auto flex justify-center items-center bg-black border rounded-2xl px-8 py-4 max-w-2xl fixed top-0 left-1/2 transform -translate-x-1/2 z-50">
+  <ul class="nav__list flex gap-6 justify-between items-center">
+    <li class="nav__item">
+      <a class="nav__link text-white" href="#">Populares ahora</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link text-white" href="#">Planes</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link text-white" href="#">Motivos para suscribirte</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link text-white" href="#">Preguntas frecuentes</a>
+    </li>
+  </ul>
+</nav>
 
-    <nav class="nav mx-auto flex justify-center items-center bg-black border rounded-2xl px-8 py-4 max-w-2xl">
-      <ul class="nav__list flex gap-6 justify-between items-center">
-        <li class="nav__item">
-          <a class="nav__link text-white" href="#">Populares ahora</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link text-white" href="#">Planes</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link text-white" href="#">Motivos para suscribirte</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link text-white" href="#">Preguntas frecuentes</a>
-        </li>
-      </ul>
-    </nav>
 
     <!-- contenidos en main-->
      <main>
-      <!-- foto -->
-      <div class="container_image-nav justify-center items-center mx-auto">
-      <img class="image_nav" src="../assets/images/fondo nav.jpg" alt="">
-    </div>
+
+<!-- Foto -->
+<div class="relative container_image-nav justify-center items-center mx-auto mt-[150px]">
+  <img class="image_nav w-full h-auto sm:h-[250px] md:h-[350px] lg:h-[400px] object-cover" src="../assets/images/fondo nav.jpg" alt="imagenPelis">
+  
+  <!-- Texto sobre la imagen -->
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white space-y-4 px-4 sm:px-6 md:px-8">
+    <!-- Título -->
+    <p class="text-3xl sm:text-4xl md:text-5xl font-bold">Películas y series sin límites y mucho más</p>
+    
+    <!-- Subtítulo -->
+    <p class="text-lg sm:text-xl md:text-2xl">A partir de 6.99€. Cancela cuando quieras</p>
+    
+  </div>
+</div>
+
 
 
 <!-- suscripcion -->
@@ -82,26 +97,29 @@
     </div>
   </div>
 
-  <!-- Mas informacion -->
-  <div class="flex justify-center items-center mt-10">
-    <!-- Mas informacion -->
-    <div class="flex justify-between items-center h-20 bg-gray-400 bg-opacity-40 p-6 flex-col sm:flex-row w-[1200px] rounded-lg transform transition duration-300 hover:scale-105">
-      <!-- Texto de la izquierda -->
-      <div class="text-white space-y-2">
-        <p class="text-2xl">Todo lo que te encanta de Netflix por solo 6,99 €.</p>
-        <p>Ahorra viendo Netflix con algunas pausas publicitarias.</p>
-      </div>
-    
-      <!-- Enlace de más información -->
-      <a href="../pages/informacion.html" class="mt-4 sm:mt-0 bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800  border border-white">
-        Más información
-      </a>
+<!-- Más información -->
+<div class="flex justify-center items-center mt-10 px-4">
+  <!-- Contenedor de información -->
+  <div class="flex flex-col sm:flex-row justify-between items-center h-auto bg-gray-400 bg-opacity-40 p-4 sm:p-5 w-full max-w-[1000px] rounded-lg transform transition duration-300 hover:scale-105">
+    <!-- Texto de la izquierda -->
+    <div class="text-white text-center sm:text-left space-y-4 mb-6 sm:mb-0">
+      <p class="text-xl sm:text-2xl font-bold">Todo lo que te encanta de Netflix por solo 6,99 €.</p>
+      <p class="text-base sm:text-lg">Ahorra viendo Netflix con algunas pausas publicitarias.</p>
     </div>
+
+    <!-- Enlace de más información -->
+    <a href="../pages/informacion.html" class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 border border-white text-base sm:text-lg">
+      Más información
+    </a>
   </div>
+</div>
+
+
+
 
   <!-- Tendencias -->
-   <div class="flex flex-col m-10 justify-center items-center">
-      <p class="text-white">Tendencias ahora</p>
+  <p class="ml-4 sm:ml-8 md:ml-[120px] lg:ml-[260px] text-white text-2xl sm:text-3xl md:text-4xl font-bold mt-8">Tendencias ahora</p>
+   <div class="flex flex-col justify-center items-center">
       <div class="flex m-10 gap-4 w-[1000px] border overflow-x-scroll">
           <img class="rounded-xl transform transition duration-300 hover:scale-105 w-40 h-auto" src="../assets/images/peli1.png" alt="pelicula 1">
           <img class="rounded-xl transform transition duration-300 hover:scale-105 w-40 h-auto" src="../assets/images/peli2.png" alt="pelicula 2">
@@ -113,8 +131,8 @@
     </div>
    
   <!-- Solo en Netflix -->
-  <div class="flex flex-col m-10 justify-center items-center">
-    <p class="text-white text-left">Solo en Netflix</p>
+  <p class="ml-4 sm:ml-8 md:ml-[120px] lg:ml-[260px] text-white mt-4 text-2xl sm:text-3xl md:text-4xl font-bold">Sólo en Netflix</p>
+  <div class="flex flex-col  justify-center items-center">
     <div class="flex m-10 gap-4 w-[1000px] border  overflow-x-scroll">
       <img class="rounded-xl transform transition duration-300 hover:scale-105 w-40 h-auto" src="../assets/images/peli7.png" alt="pelicula 1">
       <img class="rounded-xl transform transition duration-300 hover:scale-105 w-40 h-auto" src="../assets/images/peli8.png" alt="pelicula 2">
@@ -126,10 +144,10 @@
   </div>
 
   <!-- Plan -->
-  <p class="ml-[260px] text-white text-2xl font-bold">Un plan con lo que tú necesitas</p>
+  <p class="ml-4 sm:ml-8 md:ml-[120px] lg:ml-[260px] text-white mt-4 text-2xl sm:text-3xl md:text-2xl font-bold">Un plan con lo que tú necesitas</p>
   <div class="flex flex-wrap gap-6 p-6 justify-center">
     <!-- Tarjeta 1 -->
-    <div class="flex flex-col items-start bg-blue-500 p-4 rounded-lg shadow-md w-full md:w-80 transform scale-95 transition duration-300 hover:scale-100">
+    <div class="flex flex-col items-start bg-blue-950 p-4 rounded-lg shadow-md w-full md:w-80 transform scale-95 transition duration-300 hover:scale-100">
       <h2 class="text-xl font-bold text-white mb-2">Estándar con anuncios</h2>
       <p class="text-gray-700">1080p</p>
       <p class="text-gray-600 mt-1">Calidad de video buena</p>
@@ -137,7 +155,7 @@
       <p class="text-2xl font-semibold text-gray-600 mt-4">6,99€</p>
     </div>
     <!-- Tarjeta 2 -->
-    <div class="flex flex-col items-start bg-blue-500 p-4 rounded-lg shadow-md w-full md:w-80 transform scale-95 transition duration-300 hover:scale-100">
+    <div class="flex flex-col items-start bg-blue-950 p-4 rounded-lg shadow-md w-full md:w-80 transform scale-95 transition duration-300 hover:scale-100">
       <h2 class="text-xl font-bold text-white mb-2">Estándar con anuncios</h2>
       <p class="text-gray-700">1080p</p>
       <p class="text-gray-600 mt-1">Calidad de video buena</p>
@@ -145,7 +163,7 @@
       <p class="text-2xl font-semibold text-gray-600 mt-4">6,99€</p>
     </div>
     <!-- Tarjeta 3 -->
-    <div class="flex flex-col items-start bg-blue-500  p-4 rounded-lg shadow-md w-full md:w-80 transform scale-95 transition duration-300 hover:scale-100">
+    <div class="flex flex-col items-start bg-blue-950  p-4 rounded-lg shadow-md w-full md:w-80 transform scale-95 transition duration-300 hover:scale-100">
       <h2 class="text-xl font-bold text-white mb-2">Estándar con anuncios</h2>
       <p class="text-gray-700">1080p</p>
       <p class="text-gray-600 mt-1">Calidad de video buena</p>
@@ -156,7 +174,7 @@
   
 
 <!-- Motivos para suscribirte -->
-<p class="ml-[260px] text-white text-4xl font-bold">Más motivos para suscribirte</p>
+<p class="ml-4 sm:ml-8 md:ml-[120px] lg:ml-[260px] text-white mt-4 text-2xl sm:text-3xl md:text-4xl font-bold">Más motivos para suscribirte</p>
 <div class="flex flex-wrap gap-3 p-6 justify-center">
   <!-- Tarjeta 1 -->
   <div class="flex flex-col bg-gray-800 p-4 shadow-md w-full md:w-60 transform scale-95 transition duration-300 hover:scale-100 relative border border-gray-600 rounded h-[130px]">
@@ -181,8 +199,18 @@
 </div>
 
 <!-- Preguntas frecuentes -->
-<p class="ml-[260px] text-white text-4xl font-bold">Preguntas frecuentes</p>
-  
+<p class="ml-4 sm:ml-8 md:ml-[120px] lg:ml-[260px] text-white mt-4 text-2xl sm:text-3xl md:text-4xl font-bold">Preguntas frecuentes</p>
+<!-- Acordeon -->
+
+  <!-- Boton empezar -->
+  <div class="flex flex-col items-center justify-center p-4">
+    <button class="bg-red-500 text-white text-lg font-bold py-3 px-6 rounded-full hover:bg-red-600 transition duration-300">
+      Empezar
+    </button>
+    <p class="mt-4 text-white text-center text-base md:text-lg">
+      Suscríbete o reactiva tu suscripción
+    </p>
+  </div>
   
   
   
@@ -219,6 +247,7 @@
     </div>
   </footer>
   
+  <script src="script.js"></script>
 
 
   </div>
