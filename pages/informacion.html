@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+  <title>Netflix España</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="contenedor mx-auto mt-8 mb-12 px-6 max-w-7xl">
+    <!-- Encabezado -->
+ <!-- Encabezado -->
+<header class="header flex justify-between items-center">
+
+    <!-- Parte Izquierda: logo -->
+    <div class="header__left p-4">
+      <img class="header__logo w-[200px]" src="../assets/images/logo.png" alt="logo" />
+    </div>
+
+    <!-- Parte Derecha botones -->
+    <div class="header__right flex p-4 gap-4">
+      <button class="article-header__text negrita border rounded-md px-4 py-2 text-white">Español</button>
+      <a href="../pages/formulario.html">
+        <button class="article-header__text article-header__text--orange negrita border bg-red-500 rounded-md px-4 py-2 hover:bg-red-600  text-white font-bold">Iniciar sesión</button>
+      </a>
+    </div>
+
+</header>
+
+<!-- tabla -->
+<div class="flex flex-col md:flex-row items-start justify-between gap-8 p-4">
+    <!-- Sección Izquierda: Suscríbete -->
+    <div class="flex-1 flex flex-col items-start gap-4">
+      <p class="text-lg md:text-xl font-bold text-left text-white">
+        Suscríbete al plan Estándar con anuncios, el más barato que tenemos
+      </p>
+      <button class="bg-red-500 text-white text-lg font-semibold px-6 py-3 rounded hover:bg-red-600 ">
+        Suscríbete por solo 6.99€
+      </button>
+    </div>
+  
+    <!-- Línea separadora -->
+    <div class="hidden md:block w-px bg-gray-300"></div>
+    <div class="block md:hidden h-px w-full bg-gray-300"></div>
+  
+    <!-- Sección Derecha: Tabla -->
+    <div class="flex-1">
+      <table class="w-full text-left text-sm md:text-base border-collapse">
+        <tbody>
+          <tr class="border-b border-gray-300">
+            <th class="py-2 font-bold w-1/2  text-white">Suscripción</th>
+            <td class="py-2  text-white">6.99 €</td>
+          </tr>
+          <tr class="border-b border-gray-300">
+            <th class="py-2 font-bold w-1/2  text-white">Anuncios</th>
+            <td class="py-2  text-white">Cortos y fluidos</td>
+          </tr>
+          <tr class="border-b border-gray-300">
+            <th class="py-2 font-bold w-1/2  text-white">Resolución</th>
+            <td class="py-2  text-white">1080p (Full HD)</td>
+          </tr>
+          <tr class="border-b border-gray-300">
+            <th class="py-2 font-bold w-1/2  text-white">Dispositivos de tu hogar en los que puede verse Netflix a la vez</th>
+            <td class="py-2  text-white">2</td>
+          </tr>
+          <tr>
+            <th class="py-2 font-bold w-1/2  text-white">Descargar</th>
+            <td class="py-2  text-white">Incluido</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <!-- Plan -->
+  <div class=" text-white p-8">
+    <!-- Título principal -->
+    <h1 class="text-3xl md:text-5xl font-bold text-center mb-16 mt-10">
+      Motivos por los que te va a encantar el plan
+    </h1>
+    
+<!-- Contenedor de las cartas -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <!-- Carta 1 -->
+    <div class="p-4 rounded-lg shadow-md flex flex-col items-center ">
+      <img src="../assets/images/imagen1.png" alt="imagen1" class="w-20 h-20 mb-4">
+      <h2 class="text-base font-bold text-white mb-2 text-center">
+        Los anuncios no interrumpen la acción
+      </h2>
+      <p class="text-xs text-white text-center">
+        Solo verás unos breves anuncios y todos se han sincronizado para que nunca te pierdas los momentos más importantes.
+      </p>
+    </div>
+    
+    <!-- Carta 2 -->
+    <div class="p-4 rounded-lg shadow-md flex flex-col items-center ">
+      <img src="../assets/images/imagen2.png" alt="imagen2" class="w-20 h-20 mb-4">
+      <h2 class="text-base font-bold text-white mb-2 text-center">
+        Tan solo unos minutos de anuncios por hora
+      </h2>
+      <p class="text-xs text-white text-center">
+        Te da tiempo a estirar las piernas o ir a por algo de comer antes de volver a sumergirte en el contenido.
+      </p>
+    </div>
+    
+    <!-- Carta 3 -->
+    <div class="p-4 rounded-lg shadow-md flex flex-col items-center ">
+      <img src="../assets/images/imagen5.png" alt="imagen3" class="w-20 h-20 mb-4">
+      <h2 class="text-base font-bold text-white mb-2 text-center">
+        Mayor resolución con menor coste
+      </h2>
+      <p class="text-xs text-white text-center">
+        Disfruta de Full HD (1080p) por un 50 % menos que nuestro plan Estándar.
+      </p>
+    </div>
+    
+    <!-- Carta 4 -->
+    <div class="p-4 rounded-lg shadow-md flex flex-col items-center ">
+      <img src="../assets/images/imagen4.png" alt="imagen4" class="w-20 h-20 mb-4">
+      <h2 class="text-base font-bold text-white mb-2 text-center">
+        Ver en dos dispositivos
+      </h2>
+      <p class="text-xs text-white text-center">
+        Crea un máximo de cinco perfiles en tu hogar y ve contenidos en dos dispositivos a la vez.
+      </p>
+    </div>
+    
+    <!-- Carta 5 (centrada) -->
+    <div class="sm:col-span-2 flex justify-center">
+      <div class="p-4 rounded-lg shadow-md max-w-md flex flex-col items-center ">
+        <img src="../assets/images/imagen3.png" alt="imagen5" class="w-20 h-20 mb-4">
+        <h2 class="text-base font-bold text-white mb-2 text-center">
+          La aventura siempre te acompaña
+        </h2>
+        <p class="text-xs text-white text-center">
+          Descarga series y películas para verlas sin conexión allá donde vayas.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+    <!-- contenedor plan -->
+  </div>
+<!-- contenedor general -->
+    </div>
+    
+</body>
+</html>
