@@ -33,50 +33,54 @@
 </header>
 
 <!-- tabla -->
-<div class="flex flex-col md:flex-row items-center justify-between gap-8 p-4">
-    <!-- Sección Izquierda: Suscríbete -->
-    <div class="flex-1 flex flex-col items-start gap-4">
-        <img src="../assets/images/imagen7.png" alt="imagen7" class="w-20 h-20">
-        <p class="text-3xl md:text-4xl font-bold text-left text-white w-[340px]">
-            Suscríbete al plan Estándar con anuncios, el más barato que tenemos
-          </p>          
-      <button class="bg-red-500 text-white text-lg font-semibold px-6 py-3 rounded hover:bg-red-600 ">
-        Suscríbete por solo 6.99€ >
+<div class="flex flex-col md:flex-row items-center justify-center gap-8 p-4">
+  <!-- Sección Izquierda: Suscríbete -->
+  <div class="flex-1 flex flex-col items-start gap-4 md:ml-24">
+      <img src="../assets/images/imagen7.png" alt="imagen7" class="w-20 h-20">
+      <p class="text-3xl md:text-4xl font-bold text-left text-white w-[300px] md:w-[340px]">
+          Suscríbete al plan Estándar con anuncios, el más barato que tenemos
+      </p>          
+      <button class="bg-red-500 text-white text-lg font-semibold px-6 py-3 rounded hover:bg-red-600">
+          Suscríbete por solo 6.99€ >
       </button>
-    </div>
-  
-    <!-- Línea separadora -->
-    <div class="hidden md:block w-px bg-gray-300"></div>
-    <div class="block md:hidden h-px w-full bg-gray-300"></div>
-  
-    <!-- Sección Derecha: Tabla -->
-    <div class="flex-1 bg-purple-950 p-6 rounded justify-between">
-      <table class="w-full text-left text-sm md:text-base border-collapse  bg-purple-950 ">
-        <tbody>
-          <tr class="border-b border-gray-600">
-            <th class="py-2  w-1/2  text-gray-400 text-left">Precio mensual</th>
-            <td class="py-2  text-white font-bold text-right">6.99 €</td>
-          </tr>
-          <tr class="border-b border-gray-600">
-            <th class="py-2  w-1/2  text-gray-400 text-left">Anuncios</th>
-            <td class="py-2  text-white font-bold text-right">Cortos y fluidos</td>
-          </tr>
-          <tr class="border-b border-gray-600">
-            <th class="py-2  w-1/2  text-gray-400 text-left">Resolución</th>
-            <td class="py-2  text-white font-bold text-right">1080p (Full HD)</td>
-          </tr>
-          <tr class="border-b border-gray-600">
-            <th class="py-2  w-1/2  text-gray-400 text-left">Dispositivos de tu hogar en los que puede verse Netflix a la vez</th>
-            <td class="py-2  text-white font-bold text-right">2</td>
-          </tr>
-          <tr>
-            <th class="py-2  w-1/2  text-gray-400 text-left">Descargar</th>
-            <td class="py-2  text-white font-bold text-right">Incluido</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
   </div>
+
+   <!-- Línea separadora -->
+   <!-- Línea separadora -->
+    <div class="hidden md:flex flex-col items-center justify-center" style="margin-right: 80px;">
+      <div class="w-px bg-gray-300 h-[200px]"></div>
+    </div>
+
+  <!-- Sección Derecha: Tabla -->
+  <div class="flex-1 bg-purple-950 p-6 rounded justify-between max-w-[450px] md:max-w-[500px]">
+      <table class="w-full text-left text-sm md:text-base border-collapse bg-purple-950">
+          <tbody>
+              <tr class="border-b border-gray-600">
+                  <th class="py-2 w-1/2 text-gray-400 text-left">Precio mensual</th>
+                  <td class="py-2 text-white font-bold text-right">6.99 €</td>
+              </tr>
+              <tr class="border-b border-gray-600">
+                  <th class="py-2 w-1/2 text-gray-400 text-left">Anuncios</th>
+                  <td class="py-2 text-white font-bold text-right">Cortos y fluidos</td>
+              </tr>
+              <tr class="border-b border-gray-600">
+                  <th class="py-2 w-1/2 text-gray-400 text-left">Resolución</th>
+                  <td class="py-2 text-white font-bold text-right">1080p (Full HD)</td>
+              </tr>
+              <tr class="border-b border-gray-600">
+                  <th class="py-2 w-1/2 text-gray-400 text-left">Dispositivos de tu hogar en los que puede verse Netflix a la vez</th>
+                  <td class="py-2 text-white font-bold text-right">2</td>
+              </tr>
+              <tr>
+                  <th class="py-2 w-1/2 text-gray-400 text-left">Descargar</th>
+                  <td class="py-2 text-white font-bold text-right">Incluido</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
+
+
   
   <!-- Plan -->
   <div class=" text-white p-8">
@@ -176,34 +180,138 @@
     <!-- plan estandar -->
   </div>
 
-  <!-- footer -->
-      <!-- footer -->
-      <footer class="bg-black text-white py-8 mt-10" style="height: 300px; ">
-        <div class="container mx-auto px-4 lg:px-20 flex flex-col md:flex-row justify-evenly items-end md:items-start space-y-8 md:space-y-0">
-          <!-- Primera columna -->
-          <div class="space-y-2 text-center md:text-left flex flex-col text-base">
-            <p>¿Preguntas? Llama al <a href="tel:900-759-106" class="hover:underline">900-759-106</a></p>
-            <a href="#" class="text-sm underline">Preguntas frecuentes</a>
-            <a href="#" class="text-sm underline">Preferencias de cookies</a>
-          </div>
-      
-          <!-- Segunda columna -->
-          <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
-            <a href="#">Centro de ayuda</a>
-            <a href="#">Información corporativa</a>
-          </div>
-      
-          <!-- Tercera columna -->
-          <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
-            <a href="#">Términos de uso</a>
-            <a href="#">Opciones de anuncios</a>
-          </div>
-      
-          <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
-            <a href="#">Privacidad</a>
-          </div>
+
+<!-- Acordeón -->
+    <!-- Título principal -->
+    <h1 class="text-3xl md:text-5xl font-bold text-center mb-16 mt-10 text-white">
+     Preguntas frecuentes
+    </h1>
+<div class="w-full max-w-5xl mx-auto mt-8">
+  <div class="space-y-4">
+    <!-- Sección 1 -->
+    <div>
+      <input type="checkbox" id="accordion1" class="hidden peer" />
+      <label for="accordion1" class="w-full text-left bg-gray-800 p-4 text-lg font-semibold text-white rounded-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 flex justify-between items-center">
+        ¿Cuántos anuncios voy a ver?
+        <span class="text-3xl">+</span>
+      </label>
+      <div class="peer-checked:block hidden p-4 bg-gray-700 rounded-md text-white">
+        <p>Lo normal es que veas unas breves pausas publicitarias por hora. 
+          Nuestra intención es mostrar los anuncios en las pausas naturales del argumento, 
+          para no interrumpir ninguna escena importante. Verás los anuncios antes y durante ciertas series y películas. 
+          En el caso de algunas películas recién estrenadas, solo se mostrarán anuncios antes de que empiecen.</p>
+        <p>Al pulsar el botón de pausa, verás en la barra de progreso cuántas pausas publicitarias habrá. 
+          Cuando comienza una pausa publicitaria, puedes ver la cantidad de anuncios que hay en la esquina superior derecha. 
+          No puedes saltarte ni avanzar un anuncio mientras se reproduce.</p>
+      </div>
+    </div>
+
+    <!-- Sección 2 -->
+    <div>
+      <input type="checkbox" id="accordion2" class="hidden peer" />
+      <label for="accordion2" class="w-full text-left bg-gray-800 p-4 text-lg font-semibold text-white rounded-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 flex justify-between items-center">
+        ¿Los perfiles infantiles tienen publicidad?
+        <span class="text-3xl">+</span>
+      </label>
+      <div class="peer-checked:block hidden p-4 bg-gray-700 rounded-md text-white">
+        <p>No tienen publicidad, así que puedes seguir compartiendo la cuenta con los más pequeños de tu hogar 
+          sin preocuparte por lo que puedan ver en los anuncios.</p>
+      </div>
+    </div>
+
+    <!-- Sección 3 -->
+    <div>
+      <input type="checkbox" id="accordion3" class="hidden peer" />
+      <label for="accordion3" class="w-full text-left bg-gray-800 p-4 text-lg font-semibold text-white rounded-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 flex justify-between items-center">
+        ¿Mi dispositivo es compatible?
+        <span class="text-3xl">+</span>
+      </label>
+      <div class="peer-checked:block hidden p-4 bg-gray-700 rounded-md text-white">
+        <p>Algunos dispositivos y determinados tipos de televisores antiguos no son compatibles con el plan Estándar con anuncios.</p>
+      </div>
+    </div>
+
+    <!-- Sección 4 -->
+    <div>
+      <input type="checkbox" id="accordion4" class="hidden peer" />
+      <label for="accordion4" class="w-full text-left bg-gray-800 p-4 text-lg font-semibold text-white rounded-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 flex justify-between items-center">
+        ¿Qué contenido puedo ver con este plan?
+        <span class="text-3xl">+</span>
+      </label>
+      <div class="peer-checked:block hidden p-4 bg-gray-700 rounded-md text-white">
+        <p>Puedes ver, descargar y reproducir miles de series, películas y juegos. Aunque la gran mayoría de las series y películas 
+          están incluidas en el plan con anuncios, algunas no lo están debido a restricciones de licencia. 
+          Cuando estés buscando o moviéndote por el catálogo, las verás marcadas con el icono de un candado.</p>
+      </div>
+    </div>
+
+    <!-- Sección 5 -->
+    <div>
+      <input type="checkbox" id="accordion5" class="hidden peer" />
+      <label for="accordion5" class="w-full text-left bg-gray-800 p-4 text-lg font-semibold text-white rounded-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 flex justify-between items-center">
+        ¿Quién puede suscribirse al plan Estándar con anuncios?
+        <span class="text-3xl">+</span>
+      </label>
+      <div class="peer-checked:block hidden p-4 bg-gray-700 rounded-md text-white">
+        <p class="font-bold">El plan Estándar con anuncios está disponible para los suscriptores de estos países:</p>
+        <ul class="list-disc pl-5">
+          <li>Estados Unidos</li>
+          <li>Australia</li>
+          <li>Brasil</li>
+          <li>Canadá</li>
+          <li>Francia</li>
+          <li>Alemania</li>
+          <li>Italia</li>
+          <li>Japón</li>
+          <li>México</li>
+          <li>Corea del Sur</li>
+          <li>España</li>
+          <li>Reino Unido</li>
+        </ul>
+        <p class="mt-2">Es posible que el plan Estándar con anuncios no se encuentre disponible en todas las empresas colaboradoras de facturación ni en todos los paquetes. Comprueba si tu proveedor lo incluye.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+     <!-- footer -->
+     <footer class="bg-black text-white py-8 flex items-center justify-center" style="min-height: 300px; margin-top: auto;">
+      <div class="container mx-auto px-4 lg:px-20 flex flex-col md:flex-row justify-evenly items-center md:items-start space-y-8 md:space-y-0 mt-40">
+        <!-- Primera columna -->
+        <div class="space-y-2 text-center md:text-left flex flex-col text-base">
+          <p>¿Preguntas? Llama al <a href="tel:900-759-106" class="hover:underline">900-759-106</a></p>
+          <a href="#" class="text-sm underline">Preguntas frecuentes</a>
+          <a href="#" class="text-sm underline">Preferencias de cookies</a>
+          <!-- Botón de idioma -->
+          <div class="relative">
+            <select class="bg-black text-white border border-white text-sm px-3 py-1 rounded-lg mt-6 focus:ring-black" style="width: 140px;">
+              <option value="es" selected>Español</option>
+              <option value="en">Inglés</option>
+            </select>
+          </div> 
         </div>
-      </footer>
+    
+        <!-- Segunda columna -->
+        <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
+          <a href="#">Centro de ayuda</a>
+          <a href="#">Información corporativa</a>
+        </div>
+    
+        <!-- Tercera columna -->
+        <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
+          <a href="#">Términos de uso</a>
+          <a href="#">Opciones de anuncios</a>
+        </div>
+    
+        <!-- Cuarta columna -->
+        <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
+          <a href="#">Privacidad</a>
+        </div>
+      </div>
+    </footer>
   
 <!-- contenedor general -->
     </div>
