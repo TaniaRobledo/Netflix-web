@@ -19,7 +19,7 @@
 
     <!-- Parte Izquierda: logo -->
     <div class="header__left p-4">
-      <img class="header__logo w-[200px]" src="../assets/images/logo.png" alt="logo" />
+        <a href="../src/index.html"><img src="../assets/images/logo.png" alt="logo" style="width: 200px;"></h1>
     </div>
 
     <!-- Parte Derecha botones -->
@@ -54,24 +54,24 @@
       <table class="w-full text-left text-sm md:text-base border-collapse  bg-purple-950 ">
         <tbody>
           <tr class="border-b border-gray-600">
-            <th class="py-2 font-bold w-1/2  text-white text-left">Precio mensual</th>
-            <td class="py-2  text-white text-right">6.99 €</td>
+            <th class="py-2  w-1/2  text-gray-400 text-left">Precio mensual</th>
+            <td class="py-2  text-white font-bold text-right">6.99 €</td>
           </tr>
           <tr class="border-b border-gray-600">
-            <th class="py-2 font-bold w-1/2  text-white text-left">Anuncios</th>
-            <td class="py-2  text-white text-right">Cortos y fluidos</td>
+            <th class="py-2  w-1/2  text-gray-400 text-left">Anuncios</th>
+            <td class="py-2  text-white font-bold text-right">Cortos y fluidos</td>
           </tr>
           <tr class="border-b border-gray-600">
-            <th class="py-2 font-bold w-1/2  text-white text-left">Resolución</th>
-            <td class="py-2  text-white text-right">1080p (Full HD)</td>
+            <th class="py-2  w-1/2  text-gray-400 text-left">Resolución</th>
+            <td class="py-2  text-white font-bold text-right">1080p (Full HD)</td>
           </tr>
           <tr class="border-b border-gray-600">
-            <th class="py-2 font-bold w-1/2  text-white text-left">Dispositivos de tu hogar en los que puede verse Netflix a la vez</th>
-            <td class="py-2  text-white text-right">2</td>
+            <th class="py-2  w-1/2  text-gray-400 text-left">Dispositivos de tu hogar en los que puede verse Netflix a la vez</th>
+            <td class="py-2  text-white font-bold text-right">2</td>
           </tr>
           <tr>
-            <th class="py-2 font-bold w-1/2  text-white text-left">Descargar</th>
-            <td class="py-2  text-white text-right">Incluido</td>
+            <th class="py-2  w-1/2  text-gray-400 text-left">Descargar</th>
+            <td class="py-2  text-white font-bold text-right">Incluido</td>
           </tr>
         </tbody>
       </table>
@@ -86,9 +86,9 @@
     </h1>
     
 <!-- Contenedor de las cartas -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
     <!-- Carta 1 -->
-    <div class="p-4 rounded-lg shadow-md flex flex-col items-center ">
+    <div class="p-4 rounded-lg shadow-md flex flex-col items-center mb-10">
       <img src="../assets/images/imagen1.png" alt="imagen1" class="w-20 h-20 mb-4">
       <h2 class="text-base font-bold text-white mb-2 text-center">
         Los anuncios no interrumpen la acción
@@ -99,7 +99,7 @@
     </div>
     
     <!-- Carta 2 -->
-    <div class="p-4 rounded-lg shadow-md flex flex-col items-center ">
+    <div class="p-4 rounded-lg shadow-md flex flex-col items-center mb-10">
       <img src="../assets/images/imagen2.png" alt="imagen2" class="w-20 h-20 mb-4">
       <h2 class="text-base font-bold text-white mb-2 text-center">
         Tan solo unos minutos de anuncios por hora
@@ -110,7 +110,7 @@
     </div>
     
     <!-- Carta 3 -->
-    <div class="p-4 rounded-lg shadow-md flex flex-col items-center ">
+    <div class="p-4 rounded-lg shadow-md flex flex-col items-center mb-10">
       <img src="../assets/images/imagen5.png" alt="imagen3" class="w-20 h-20 mb-4">
       <h2 class="text-base font-bold text-white mb-2 text-center">
         Mayor resolución con menor coste
@@ -121,7 +121,7 @@
     </div>
     
     <!-- Carta 4 -->
-    <div class="p-4 rounded-lg shadow-md flex flex-col items-center ">
+    <div class="p-4 rounded-lg shadow-md flex flex-col items-center mb-10">
       <img src="../assets/images/imagen4.png" alt="imagen4" class="w-20 h-20 mb-4">
       <h2 class="text-base font-bold text-white mb-2 text-center">
         Ver en dos dispositivos
@@ -162,7 +162,7 @@
   
     <!-- Botones -->
     <div class="space-y-4 flex flex-col items-center">
-        <!-- Botón rojo (un poco más grande que el gris) -->
+        <!-- Botón rojo -->
         <button class="bg-red-600 text-white py-2 px-6 rounded-md text-lg font-semibold hover:bg-red-700 transition duration-300">
           Suscríbete por 6,99€
         </button>
@@ -173,8 +173,37 @@
         </button>
       </div>
       
-      
+    <!-- plan estandar -->
   </div>
+
+  <!-- footer -->
+      <!-- footer -->
+      <footer class="bg-black text-white py-8 mt-10" style="height: 300px; ">
+        <div class="container mx-auto px-4 lg:px-20 flex flex-col md:flex-row justify-evenly items-end md:items-start space-y-8 md:space-y-0">
+          <!-- Primera columna -->
+          <div class="space-y-2 text-center md:text-left flex flex-col text-base">
+            <p>¿Preguntas? Llama al <a href="tel:900-759-106" class="hover:underline">900-759-106</a></p>
+            <a href="#" class="text-sm underline">Preguntas frecuentes</a>
+            <a href="#" class="text-sm underline">Preferencias de cookies</a>
+          </div>
+      
+          <!-- Segunda columna -->
+          <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
+            <a href="#">Centro de ayuda</a>
+            <a href="#">Información corporativa</a>
+          </div>
+      
+          <!-- Tercera columna -->
+          <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
+            <a href="#">Términos de uso</a>
+            <a href="#">Opciones de anuncios</a>
+          </div>
+      
+          <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
+            <a href="#">Privacidad</a>
+          </div>
+        </div>
+      </footer>
   
 <!-- contenedor general -->
     </div>
