@@ -200,7 +200,85 @@
 
 <!-- Preguntas frecuentes -->
 <p class="ml-4 sm:ml-8 md:ml-[120px] lg:ml-[260px] text-white mt-4 text-2xl sm:text-3xl md:text-4xl font-bold">Preguntas frecuentes</p>
-<!-- Acordeon -->
+
+ 
+<!-- Acordeón -->
+
+<div class="w-full max-w-5xl mx-auto mt-8 mb-8">
+ <div class="space-y-4">
+   <!-- Sección 1 -->
+   <div>
+     <input type="checkbox" id="accordion1" class="hidden peer" />
+     <label for="accordion1" class="w-full text-left bg-gray-800 p-4 text-lg font-semibold text-white rounded-md  flex justify-between items-center hover:bg-gray-600">
+       ¿Quñe es Netflix?
+       <span class="text-3xl">+</span>
+     </label>
+     <div class="peer-checked:block hidden p-4 bg-gray-700 rounded-md text-white">
+       <p>Lo normal es que veas unas breves pausas publicitarias por hora. 
+         Nuestra intención es mostrar los anuncios en las pausas naturales del argumento, 
+         para no interrumpir ninguna escena importante. Verás los anuncios antes y durante ciertas series y películas. 
+         En el caso de algunas películas recién estrenadas, solo se mostrarán anuncios antes de que empiecen.</p>
+       <p>Al pulsar el botón de pausa, verás en la barra de progreso cuántas pausas publicitarias habrá. 
+         Cuando comienza una pausa publicitaria, puedes ver la cantidad de anuncios que hay en la esquina superior derecha. 
+         No puedes saltarte ni avanzar un anuncio mientras se reproduce.</p>
+     </div>
+   </div>
+
+   <!-- Sección 2 -->
+   <div>
+     <input type="checkbox" id="accordion2" class="hidden peer" />
+     <label for="accordion2" class="w-full text-left bg-gray-800 p-4 text-lg font-semibold text-white rounded-md  flex justify-between items-center hover:bg-gray-600">
+       ¿Cuánto cuesta Netflix?
+       <span class="text-3xl">+</span>
+     </label>
+     <div class="peer-checked:block hidden p-4 bg-gray-700 rounded-md text-white">
+       <p>No tienen publicidad, así que puedes seguir compartiendo la cuenta con los más pequeños de tu hogar 
+         sin preocuparte por lo que puedan ver en los anuncios.</p>
+     </div>
+   </div>
+
+   <!-- Sección 3 -->
+   <div>
+     <input type="checkbox" id="accordion3" class="hidden peer" />
+     <label for="accordion3" class="w-full text-left bg-gray-800 p-4 text-lg font-semibold text-white rounded-md flex justify-between items-center hover:bg-gray-600">
+       ¿Dónde puedo ver Netflix?
+       <span class="text-3xl">+</span>
+     </label>
+     <div class="peer-checked:block hidden p-4 bg-gray-700 rounded-md text-white">
+       <p>Algunos dispositivos y determinados tipos de televisores antiguos no son compatibles con el plan Estándar con anuncios.</p>
+     </div>
+   </div>
+
+   <!-- Sección 4 -->
+   <div>
+     <input type="checkbox" id="accordion4" class="hidden peer" />
+     <label for="accordion4" class="w-full text-left bg-gray-800 p-4 text-lg font-semibold text-white rounded-md  flex justify-between items-center hover:bg-gray-600">
+       ¿Cómo cancelo?
+       <span class="text-3xl">+</span>
+     </label>
+     <div class="peer-checked:block hidden p-4 bg-gray-700 rounded-md text-white">
+       <p>Puedes ver, descargar y reproducir miles de series, películas y juegos. Aunque la gran mayoría de las series y películas 
+         están incluidas en el plan con anuncios, algunas no lo están debido a restricciones de licencia. 
+         Cuando estés buscando o moviéndote por el catálogo, las verás marcadas con el icono de un candado.</p>
+     </div>
+   </div>
+
+   <!-- Sección 5 -->
+   <div>
+     <input type="checkbox" id="accordion5" class="hidden peer" />
+     <label for="accordion5" class="w-full text-left bg-gray-800 p-4 text-lg font-semibold text-white rounded-md flex justify-between items-center hover:bg-gray-600">
+       ¿Que puedo ver en Netflix?
+       <span class="text-3xl">+</span>
+     </label>
+     <div class="peer-checked:block hidden p-4 bg-gray-700 rounded-md text-white">
+      <p>Puedes ver, descargar y reproducir miles de series, películas y juegos. Aunque la gran mayoría de las series y películas 
+        están incluidas en el plan con anuncios, algunas no lo están debido a restricciones de licencia. 
+        Cuando estés buscando o moviéndote por el catálogo, las verás marcadas con el icono de un candado.</p>
+     </div>
+   </div>
+ </div>
+</div>
+
 
   <!-- Boton empezar -->
   <div class="flex flex-col items-center justify-center p-4">
@@ -220,34 +298,58 @@
 
 
    <!-- footer -->
-   <footer class="bg-black text-white py-8" style="height: 300px;">
-    <div class="container mx-auto px-4 lg:px-20 flex flex-col md:flex-row justify-evenly items-end md:items-start space-y-8 md:space-y-0">
+   <footer class="bg-black text-white py-8 flex items-center justify-center" style="min-height: 300px; margin-top: auto;">
+    <div class="container mx-auto px-4 lg:px-20 flex flex-col md:flex-row justify-evenly items-center md:items-start space-y-8 md:space-y-0 mt-10">
       <!-- Primera columna -->
       <div class="space-y-2 text-center md:text-left flex flex-col text-base">
         <p>¿Preguntas? Llama al <a href="tel:900-759-106" class="hover:underline">900-759-106</a></p>
         <a href="#" class="text-sm underline">Preguntas frecuentes</a>
-        <a href="#" class="text-sm underline">Preferencias de cookies</a>
+        <a href="#" class="text-sm underline">Inversores</a>
+        <a href="#" class="text-sm underline">Formas de ver</a>
+        <a href="#" class="text-sm underline">Información corporativa</a>
+        <a href="#" class="text-sm underline">Avisos legales</a>
+        <!-- Botón de idioma -->
+        <div class="relative">
+          <select class="bg-black text-white border border-white text-sm px-3 py-1 rounded-lg mt-6 mb-6 focus:ring-black" style="width: 140px;">
+            <option value="es" selected>Español</option>
+            <option value="en">Inglés</option>
+          </select>
+        </div> 
+
+        <p>Netflix España</p>
       </div>
   
       <!-- Segunda columna -->
       <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
         <a href="#">Centro de ayuda</a>
-        <a href="#">Información corporativa</a>
+        <a href="#">Empleo</a>
+        <a href="#">Términos de uso</a>
+        <a href="#">Contáctanos</a>
+        <a href="#">Solo en Neftlix</a>
       </div>
   
       <!-- Tercera columna -->
       <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
-        <a href="#">Términos de uso</a>
+        <a href="#">Cuentas</a>
+        <a href="#">Canjear tarjetas regalo</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Prueba de velocidad</a>
         <a href="#">Opciones de anuncios</a>
       </div>
   
+      <!-- Cuarta columna -->
       <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
-        <a href="#">Privacidad</a>
+        <a href="#">Zona de presa</a>
+        <a href="#">Comprar tarjetas regalo</a>
+        <a href="#">Preferencias de cookies</a>
+        <a href="#">Garantía legal</a>
       </div>
     </div>
   </footer>
+
   
 
   </div>
+
 </body>
 </html>
