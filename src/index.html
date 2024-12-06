@@ -11,7 +11,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <div class="contenedor mx-auto mt-8 mb-12 px-6 max-w-7xl">
+  <div class="contenedor mx-auto mt-8 px-6 max-w-7xl">
     <!-- Encabezado -->
     <header class="header flex justify-between items-center">
 
@@ -144,31 +144,68 @@
   </div>
 
   <!-- Plan -->
-  <p class="ml-4 sm:ml-8 md:ml-[120px] lg:ml-[260px] text-white mt-4 text-2xl sm:text-3xl md:text-2xl font-bold">Un plan con lo que tú necesitas</p>
+  <div class="container mx-0 px-0">
+    <p class="ml-10 sm:ml-14 md:ml-18 lg:ml-22 text-white mt-4 text-2xl sm:text-3xl md:text-2xl font-bold">Un plan con lo que tú necesitas</p>
+
+
+  </div>
+  
   <div class="flex flex-wrap gap-6 p-6 justify-center">
     <!-- Tarjeta 1 -->
-    <div class="flex flex-col items-start bg-blue-950 p-4 rounded-lg shadow-md w-full md:w-80 transform scale-95 transition duration-300 hover:scale-100">
+    <div class="flex flex-col items-start p-4 rounded-lg shadow-md w-full md:w-80 transform scale-95 transition duration-300 hover:scale-100" style="background-color: #1C224E;">
       <h2 class="text-xl font-bold text-white mb-2">Estándar con anuncios</h2>
-      <p class="text-gray-700">1080p</p>
-      <p class="text-gray-600 mt-1">Calidad de video buena</p>
-      <p class="text-gray-600 mt-1">Menos anuncios de lo que piensas</p>
-      <p class="text-2xl font-semibold text-gray-600 mt-4">6,99€</p>
+
+      <p class="m-2 font-bold" style="color: #BCC6DA">1080p</p>
+
+      <div class="justify-between items-center" style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="../assets/images/tik.png" alt="">
+        <p class="mt-1" style="color: #BCC6DA;">Calidad de video buena</p>
+      </div>
+      
+      <div class="justify-between items-center" style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="../assets/images/tik.png" alt="">
+        <p class="mt-1" style="color: #BCC6DA;">Menos anuncios de los que piensas</p>
+      </div>
+
+      <p class="text-2xl font-semibold mt-4" style="color: #BCC6DA">6,99€ al mes</p>
     </div>
+
     <!-- Tarjeta 2 -->
-    <div class="flex flex-col items-start bg-blue-950 p-4 rounded-lg shadow-md w-full md:w-80 transform scale-95 transition duration-300 hover:scale-100">
-      <h2 class="text-xl font-bold text-white mb-2">Estándar con anuncios</h2>
-      <p class="text-gray-700">1080p</p>
-      <p class="text-gray-600 mt-1">Calidad de video buena</p>
-      <p class="text-gray-600 mt-1">Menos anuncios de lo que piensas</p>
-      <p class="text-2xl font-semibold text-gray-600 mt-4">6,99€</p>
+    <div class="flex flex-col items-start p-4 rounded-lg shadow-md w-full md:w-80 transform scale-95 transition duration-300 hover:scale-100" style="background-color: #1C224E;">
+      <h2 class="text-xl font-bold text-white mb-2">Estándar</h2>
+
+      <p class="m-2 font-bold" style="color: #BCC6DA">1080p</p>
+
+      <div class="justify-between items-center" style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="../assets/images/tik.png" alt="">
+        <p class="mt-1" style="color: #BCC6DA;">Calidad de video buena</p>
+      </div>
+      
+      <div class="justify-between items-center" style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="../assets/images/tik.png" alt="">
+        <p class="mt-1" style="color: #BCC6DA;">Sin anuncios</p>
+      </div>
+
+      <p class="text-2xl font-semibold mt-4" style="color: #BCC6DA">13,99 al mes€</p>
     </div>
+
     <!-- Tarjeta 3 -->
-    <div class="flex flex-col items-start bg-blue-950  p-4 rounded-lg shadow-md w-full md:w-80 transform scale-95 transition duration-300 hover:scale-100">
-      <h2 class="text-xl font-bold text-white mb-2">Estándar con anuncios</h2>
-      <p class="text-gray-700">1080p</p>
-      <p class="text-gray-600 mt-1">Calidad de video buena</p>
-      <p class="text-gray-600 mt-1">Menos anuncios de lo que piensas</p>
-      <p class="text-2xl font-semibold text-gray-600 mt-4">6,99€</p>
+    <div class="flex flex-col items-start p-4 rounded-lg shadow-md w-full md:w-80 transform scale-95 transition duration-300 hover:scale-100" style="background-color: #1C224E;">
+      <h2 class="text-xl font-bold text-white mb-2">Premium</h2>
+
+      <p class="m-2 font-bold" style="color: #BCC6DA">4K + HDR</p>
+
+      <div class="justify-between items-center" style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="../assets/images/tik.png" alt="">
+        <p class="mt-1" style="color: #BCC6DA;">Calidad de video óptima</p>
+      </div>
+      
+      <div class="justify-between items-center" style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="../assets/images/tik.png" alt="">
+        <p class="mt-1" style="color: #BCC6DA;">Sin anuncios</p>
+      </div>
+
+      <p class="text-2xl font-semibold mt-4" style="color: #BCC6DA">19,99€ al mes</p>
     </div>
   </div>
   
@@ -178,22 +215,22 @@
 <div class="flex flex-wrap gap-3 p-6 justify-center">
   <!-- Tarjeta 1 -->
   <div class="flex flex-col bg-gray-800 p-4 shadow-md w-full md:w-60 transform scale-95 transition duration-300 hover:scale-100 relative border border-gray-600 rounded h-[130px]">
-    <h2 class="text-xl font-bold text-white mb-2">Historias adaptadas a tus gustos</h2>
+    <h2 class="text-sm font-bold text-white mb-2">Historias adaptadas a tus gustos</h2>
     <img class="absolute bottom-2 right-2" src="../assets/images/suscripcion1.png" alt="imagen1">
   </div>
   <!-- Tarjeta 2 -->
   <div class="flex flex-col bg-gray-800 p-4 shadow-md w-full md:w-60 transform scale-95 transition duration-300 hover:scale-100 relative border border-gray-600 rounded h-[130px]">
-    <h2 class="text-xl font-bold text-white mb-2">Cancela o cambia de plan cuando quieras</h2>
+    <h2 class="text-lg font-bold text-white mb-2">Cancela o cambia de plan cuando quieras</h2>
     <img class="absolute bottom-2 right-2" src="../assets/images/suscripcion2.png" alt="imagen2">
   </div>
   <!-- Tarjeta 3 -->
   <div class="flex flex-col bg-gray-800 p-4 shadow-md w-full md:w-60 transform scale-95 transition duration-300 hover:scale-100 relative border border-gray-600 rounded h-[130px]">
-    <h2 class="text-xl font-bold text-white mb-2">Un espacio infantil</h2>
+    <h2 class="text-base font-bold text-white mb-2">Un espacio infantil</h2>
     <img class="absolute bottom-2 right-2" src="../assets/images/suscripcion3.png" alt="imagen3">
   </div>
   <!-- Tarjeta 4 -->
   <div class="flex flex-col bg-gray-800 p-4 shadow-md w-full md:w-60 transform scale-95 transition duration-300 hover:scale-100 relative border border-gray-600 rounded h-[130px]">
-    <h2 class="text-xl font-bold text-white mb-2">Para ver en tu móvil, tableta y ordenador.</h2>
+    <h2 class="text-base font-bold text-white mb-2">Para ver en tu móvil, tableta y ordenador.</h2>
     <img class="absolute bottom-2 right-2" src="../assets/images/suscripcion4.png" alt="imagen4">
   </div>
 </div>
@@ -291,8 +328,6 @@
   </div>
   
   
-  
-
   <!-- contenidos en main -->
      </main>
 
