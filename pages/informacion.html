@@ -7,31 +7,40 @@
   <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/formulario.css">
-  <link rel="stylesheet" href="../css/informacion.css">
   <title>Netflix España</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body  style="background-color: #230818;">
 
-    <div class="contenedor_informacion mx-auto mt-8 px-6 max-w-7xl">
-    <!-- Encabezado -->
- <!-- Encabezado -->
+<div class="mx-auto mt-8 px-6 max-w-7xl">
+
+<!-- Encabezado -->
 <header class="header flex justify-between items-center">
 
-    <!-- Parte Izquierda: logo -->
-    <div class="header__left p-4">
-        <a href="../src/index.html"><img src="../assets/images/logo.png" alt="logo" style="width: 200px;"></h1>
-    </div>
+  <!-- Parte Izquierda: logo -->
+  <div class="header__left p-4">
+      <a href="../src/index.html"><img src="../assets/images/logo.png" alt="logo" style="width: 200px;"></a>
+  </div>
 
-    <!-- Parte Derecha botones -->
-    <div class="header__right flex p-4 gap-4">
-      <button class="article-header__text negrita border rounded-md px-4 py-2 text-white">Español</button>
+  <!-- Parte Derecha: botones -->
+  <div class="header__right flex items-center p-4 gap-4">
+      <div class="relative">
+          <select class="text-white border border-white text-sm px-3 py-1 rounded-lg mt-6 mb-6 focus:ring-2 focus:ring-black focus:outline-none bg-[#230818] focus:bg-white focus:text-black w-32">
+              <option value="es" selected>Español</option>
+              <option value="en">Inglés</option>
+          </select>
+      </div>
+
       <a href="../pages/formulario.html">
-        <button class="article-header__text article-header__text--orange negrita border bg-red-700 rounded-md px-4 py-2 hover:bg-red-600  text-white font-bold">Iniciar sesión</button>
+          <button class="article-header__text article-header__text--orange negrita border bg-red-700 rounded-md px-4 py-2 hover:bg-red-600 text-white font-bold w-32">
+              Iniciar sesión
+          </button>
       </a>
-    </div>
+  </div>
 
 </header>
+
+
 
 <!-- tabla -->
 <div class="flex flex-col md:flex-row items-center justify-center gap-8 p-4">
@@ -42,7 +51,7 @@
           Suscríbete al plan Estándar con anuncios, el más barato que tenemos
       </p>          
       <button class="bg-red-700 text-white text-lg font-semibold px-6 py-3 rounded hover:bg-red-600">
-          Suscríbete por solo 6.99€ >
+         <a href="./formulario.html" target="_blank"> Suscríbete por solo 6.99€ ></a>
       </button>
   </div>
 
@@ -83,8 +92,7 @@
 </div>
 
 
-
-  <!-- Plan -->
+  <!-- Sección plan -->
   <div class=" text-white p-8" >
     <!-- Título principal -->
     <h1 class="text-3xl md:text-5xl font-bold text-center mb-16 mt-10">
@@ -169,12 +177,12 @@
     <div class="space-y-4 flex flex-col items-center">
         <!-- Botón rojo -->
         <button class="bg-red-600 text-white py-2 px-6 rounded-md text-lg font-semibold hover:bg-red-700 transition duration-300">
-          Suscríbete por 6,99€
+          <a href="./formulario.html" target="_blank"> Suscríbete por solo 6.99€ ></a>
         </button>
       
         <!-- Botón gris -->
         <button class="bg-gray-600 text-white py-2 px-6 rounded-md text-lg font-semibold hover:bg-gray-700 transition duration-300">
-          Ver los planes
+          <a href="https://www.netflix.com/signup/planform?locale=es-ES" target="_blank">Ver los planes</a>
         </button>
       </div>
       
@@ -277,8 +285,8 @@
 
 
 <!-- footer -->
-<footer class="bg-black text-white py-8 px-8 lg:px-24 flex items-center justify-center mt-20 w-full max-w-screen-xl mx-auto">
-  <div class="footer__informacion mx-auto px-4 lg:px-20 flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0 w-full">
+<footer class=" text-white py-8 px-8 lg:px-24 flex items-center justify-center mt-20 w-full max-w-screen-xl mx-auto" style="background-color: #230818;">
+  <div class="footer mx-auto px-4 lg:px-20 flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0 w-full">
     <!-- Primera columna -->
     <div class="space-y-2 text-center md:text-left flex flex-col text-base">
       <p>¿Preguntas? Llama al <a href="tel:900-759-106" target="_blank" class="hover:underline">900-759-106</a></p>
@@ -289,11 +297,13 @@
       <a href="https://help.netflix.com/es-es/node/412" target="_blank" class="text-sm underline">Avisos legales</a>
       <!-- Botón de idioma -->
       <div class="relative">
-        <select class="bg-black text-white border border-white text-sm px-3 py-1 rounded-lg mt-6 focus:ring-black" style="width: 140px;">
+        <select class="text-white border border-white text-sm px-3 py-1 rounded-lg mt-6 mb-6 focus:ring-2 focus:ring-black focus:outline-none bg-[#230818] focus:bg-white focus:text-black">
           <option value="es" selected>Español</option>
           <option value="en">Inglés</option>
         </select>
-      </div> 
+      </div>
+      
+       
     </div>
 
     <!-- Segunda columna -->
