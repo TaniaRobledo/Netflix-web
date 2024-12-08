@@ -22,22 +22,24 @@
       <a href="../src/index.html"><img src="../assets/images/logo.png" alt="logo" style="width: 200px;"></a>
   </div>
 
-  <!-- Parte Derecha: botones -->
-  <div class="header__right flex items-center p-4 gap-4">
-      <div class="relative">
-          <select class="text-white border border-white text-sm px-3 py-1 rounded-lg mt-6 mb-6 focus:ring-2 focus:ring-black focus:outline-none bg-[#230818] focus:bg-white focus:text-black w-32">
-              <option value="es" selected>Español</option>
-              <option value="en">Inglés</option>
-          </select>
-      </div>
-
-      <a href="../pages/formulario.html">
-          <button class="article-header__text article-header__text--orange negrita border bg-red-700 rounded-md px-4 py-2 hover:bg-red-600 text-white font-bold w-32">
-              Iniciar sesión
-          </button>
-      </a>
+<!-- Parte Derecha botones -->
+<div class="header__right flex fixed top-0 right-0 p-4 gap-4 mt-14 mr-20 items-center z-50">
+  <!-- Botón de idioma -->
+  <div class="relative">
+    <select class="w-36 h-10 flex items-center justify-center text-white border border-white text-sm rounded-lg focus:ring-2 focus:ring-black focus:outline-none bg-[#1D1515]">
+      <option value="es" selected>Español</option>
+      <option value="en">Inglés</option>
+    </select>
   </div>
 
+  <!-- Botón de iniciar sesión -->
+  <a href="../pages/formulario.html">
+    <button class="w-36 h-10 flex items-center justify-center bg-red-600 text-white font-bold text-sm rounded-xl border">
+      Iniciar sesión
+    </button>
+  </a>
+</div>
+<!-- fin de header -->
 </header>
 
 

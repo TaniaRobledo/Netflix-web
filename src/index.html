@@ -21,29 +21,30 @@
       </div>
       
 
-    <!-- Parte Derecha botones -->
-    <div class="header__right flex fixed top-0 right-0 p-4 gap-4 mt-6 items-center z-50">
-    <!-- Botón de idioma -->
-    <div class="relative">
-      <select class="text-white border border-white text-sm px-3 py-1 rounded-lg mt-6 mb-6 focus:ring-2 focus:ring-black focus:outline-none bg-[#1D1515]">
-        <option value="es" selected>Español</option>
-        <option value="en">Inglés</option>
-      </select>
-    </div>
-    
-
-    <a href="../pages/formulario.html">
-      <button class="w-36 h-10 article-header__text article-header__text--orange negrita border bg-white text-black rounded-3xl">
-        Iniciar sesión
-      </button>
-    </a>
+<!-- Parte Derecha botones -->
+<div class="header__right flex fixed top-0 right-0 p-4 gap-4 mt-6 items-center z-50">
+  <!-- Botón de idioma -->
+  <div class="relative">
+    <select class="w-36 h-10 flex items-center justify-center text-white border border-white text-sm rounded-lg focus:ring-2 focus:ring-black focus:outline-none bg-[#1D1515]">
+      <option value="es" selected>Español</option>
+      <option value="en">Inglés</option>
+    </select>
   </div>
+
+  <!-- Botón de iniciar sesión -->
+  <a href="../pages/formulario.html">
+    <button class="w-36 h-10 flex items-center justify-center bg-white text-black font-bold text-sm rounded-xl border">
+      Iniciar sesión
+    </button>
+  </a>
+</div>
+
 <!-- fin header -->
   </header>
 
 
   <!-- Nav -->
-<nav class="nav mx-auto flex justify-center items-center rounded-3xl px-8 py-4 max-w-2xl fixed top-0 left-1/2 transform -translate-x-1/2 z-50" style="background-color:  #000000;">
+<nav class="nav mx-auto flex justify-center items-center rounded-3xl px-8 py-4  fixed top-0 left-1/2 transform -translate-x-1/2 z-50" style="background-color:  #000000;">
   <ul class="nav__list flex gap-6 justify-between items-center">
     <li class="nav__item">
       <a class="nav__link" href="#populares" style="color: #FFFFFF;">Populares ahora</a>
@@ -66,11 +67,17 @@
 
 
 <!-- Foto -->
-<div class="relative container_image-nav justify-center items-center mx-auto mt-[150px] ">
-  <!-- Contenedor cuadrado con bordes redondeados ligeramente -->
-  <div class="overflow-hidden rounded-[30px] w-full h-[400px] sm:h-[250px] md:h-[350px] lg:h-[400px] shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
-    <img class="image_nav w-full h-auto sm:h-[250px] md:h-[350px] lg:h-[400px] object-cover" src="../assets/images/fondo nav.jpg" alt="imagenPelis">
+<div class="relative container_image-nav justify-center items-center mx-auto mt-[150px]">
+  <!-- Contenedor texto foto-->
+  <div class="relative overflow-hidden rounded-[30px] w-full border-2">
+    <!-- Imagen -->
+    <img class="image_nav w-full h-auto sm:h-[250px] md:h-[350px] lg:h-[400px] object-cover" 
+         src="../assets/images/fondo nav.jpg" 
+         alt="imagenPelis">
+    <!-- Degradado -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
   </div>
+  
   
   <!-- Texto sobre la imagen -->
   <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white space-y-4 px-4 sm:px-6 md:px-8">
