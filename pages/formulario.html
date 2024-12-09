@@ -31,57 +31,57 @@
     </header>
     
 
-    <!-- Contenedor Central del formulario-->
-    <div class="flex flex-grow items-center justify-center">
-      <!-- Formulario -->
-      <form class="flex flex-col items-center justify-center bg-black bg-opacity-80 p-6 rounded-lg shadow-md w-full max-w-sm">
-        <h2 class="text-2xl font-bold mb-5">Iniciar sesión</h2>
-        <input 
-          type="text" 
-          placeholder="Correo o número de móvil" 
-          class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-white text-white bg-black bg-opacity-70"
-          required
-        >
-        <input 
-          type="password" 
-          placeholder="Contraseña" 
-          class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-white text-white bg-black bg-opacity-70"
-          required
-        >
-        <button 
-          type="submit" 
-          class="w-full bg-red-600 text-white p-3 rounded-lg font-semibold mb-3 hover:bg-red-700 transition"
-        >
-          Iniciar sesión
-          
-        </button>
-        <p class="p-2 text-white">O</p>
-        <button 
-          type="button" 
-          class="w-full bg-gray-600 text-white p-3 rounded-lg font-semibold mb-3 hover:bg-gray-700 transition"
-        >
-          Usar un código de sesión
-        </button>
-        <a href="#" class="text-blue-600 text-sm mb-4 hover:underline">¿Has olvidado tu contraseña?</a>
-        <div class="flex items-center w-full mb-4">
-          <input 
-            type="checkbox" 
-            id="recuerdame" 
-            class="mr-2 rounded"
-          >
-          <label for="recuerdame" class="text-sm text-gray-300">Recuérdame</label>
-        </div>
-        <p class="text-sm text-gray-300 mb-2">
-          ¿Todavía sin Netflix? 
-          <a href="#" class="text-blue-600 hover:underline">Suscríbete ya</a>.
-        </p>
-        <p class="text-xs text-gray-400 text-center">
-          Esta página utiliza Google reCAPTCHA para garantizar que no eres un robot. 
-          <a href="#" class="text-blue-600 hover:underline">Más información</a>.
-        </p>
-      </form>
-      <!-- contenedor del formulario -->
+    <!-- Contenedor del formulario-->
+<div class="flex flex-grow items-center justify-center">
+  <!-- Formulario -->
+  <form class="flex flex-col items-center justify-center bg-black bg-opacity-80 p-6 rounded-lg shadow-md w-full max-w-sm" id="loginForm">
+    <h2 class="text-2xl font-bold mb-5">Iniciar sesión</h2>
+    <input 
+      type="email" placeholder="Correo" name="name" id="email" 
+      class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-white text-white bg-black bg-opacity-70">
+    <!-- mensaje d error -->
+    <span id="emailError" class="text-red-500 text-sm hidden"></span> 
+    
+    <input type="password" name="password" placeholder="Contraseña" 
+      class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-white text-white bg-black bg-opacity-70">
+
+    <!-- Mensaje de error -->
+    <span id="passwordError" class="text-red-500 text-sm hidden"></span> 
+    
+    <button 
+      type="submit" 
+      class="w-full bg-red-600 text-white p-3 rounded-lg font-semibold mb-3 hover:bg-red-700 transition"
+    >
+      Iniciar sesión
+    </button>
+    <p class="p-2 text-white">O</p>
+    <button 
+      type="button" 
+      class="w-full bg-gray-600 text-white p-3 rounded-lg font-semibold mb-3 hover:bg-gray-700 transition"
+    >
+      Usar un código de sesión
+    </button>
+    <a href="#" class="text-blue-600 text-sm mb-4 hover:underline">¿Has olvidado tu contraseña?</a>
+    <div class="flex items-center w-full mb-4">
+      <input 
+        type="checkbox" 
+        id="recuerdame" 
+        class="mr-2 rounded"
+      >
+      <label for="recuerdame" class="text-sm text-gray-300">Recuérdame</label>
     </div>
+    <p class="text-sm text-gray-300 mb-2">
+      ¿Todavía sin Netflix? 
+      <a href="#" class="text-blue-600 hover:underline">Suscríbete ya</a>.
+    </p>
+    <p class="text-xs text-gray-400 text-center">
+      Esta página utiliza Google reCAPTCHA para garantizar que no eres un robot. 
+      <a href="#" class="text-blue-600 hover:underline">Más información</a>.
+    </p>
+  </form>
+</div>
+
+
 
 
     <!-- footer -->
