@@ -25,11 +25,13 @@
 <div class="header__right flex fixed top-0 right-0 p-4 gap-4 mt-6 items-center z-50">
   <!-- Botón de idioma -->
   <div class="relative">
-    <select class="w-36 h-10 flex items-center justify-center text-white border border-white text-sm rounded-lg focus:ring-2 focus:ring-black focus:outline-none bg-[#1D1515]">
+    <select 
+      class="w-36 h-10 flex items-center justify-center text-white border border-white text-sm rounded-lg bg-[#230818] focus:bg-white focus:text-black">
       <option value="es" selected>Español</option>
       <option value="en">Inglés</option>
     </select>
   </div>
+  
 
   <!-- Botón de iniciar sesión -->
   <a href="../pages/formulario.html">
@@ -44,22 +46,23 @@
 
 
   <!-- Nav -->
-<nav class="nav mx-auto flex justify-center items-center rounded-3xl px-8 py-4  fixed top-0 left-1/2 transform -translate-x-1/2 z-50" style="background-color:  #000000;">
-  <ul class="nav__list flex gap-6 justify-between items-center">
+<nav class="nav mx-auto flex justify-center items-center rounded-3xl px-8 py-4 fixed top-0 left-1/2 transform -translate-x-1/2 z-50 bg-black">
+  <ul class="nav__list flex gap-4 justify-between items-center whitespace-nowrap overflow-x-auto">
     <li class="nav__item">
-      <a class="nav__link" href="#populares" style="color: #FFFFFF;">Populares ahora</a>
+      <a class="nav__link text-white text-sm md:text-base hover:text-orange-500 transition-colors" href="#populares">Populares ahora</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="#planes" style="color: #FFFFFF";>Planes</a>
+      <a class="nav__link text-white text-sm md:text-base hover:text-orange-500 transition-colors" href="#planes">Planes</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="#suscripcion" style="color: #FFFFFF;">Motivos para suscribirte</a>
+      <a class="nav__link text-white text-sm md:text-base hover:text-orange-500 transition-colors" href="#suscripcion">Motivos para suscribirte</a>
     </li>
     <li class="nav__item">
-      <a class="nav__link" href="#preguntas" style="color: #FFFFFF;">Preguntas frecuentes</a>
+      <a class="nav__link text-white text-sm md:text-base hover:text-orange-500 transition-colors" href="#preguntas">Preguntas frecuentes</a>
     </li>
   </ul>
 </nav>
+
 
 
     <!-- contenidos en main-->
@@ -100,21 +103,25 @@
     </div>
   </div>
 
-  <!-- correo electronico -->
-  <div class="flex justify-center items-center m-4">
-    <div class="flex space-x-4">
-      <!-- Input de correo electrónico -->
-      <input 
-        type="email" 
-        placeholder="Dirección de correo" 
-        class="p-4 rounded-3xl text-white border-2 placeholder-white focus:outline-none focus:ring-2 focus:ring-white w-[400px]" style="background-color: #000000;"/>
-      
-      <!-- Botón Empezar -->
-      <button class="p-2 bg-red-700 text-lg text-white rounded-3xl hover:bg-red-800 focus:outline-none w-[200px] font-bold">
-        <a href="https://www.netflix.com/signup/registration?previousMode=welcome&locale=es-ES" target="_blank">Empezar ></a>
-      </button>
-    </div>
+  <!-- Correo Electrónico -->
+<div class="flex justify-center items-center m-4">
+  <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+    <!-- Input de correo electrónico -->
+    <input 
+      type="email" 
+      placeholder="Dirección de correo" 
+      class="p-4 rounded-3xl text-white border-2 border-gray-400 placeholder-white focus:outline-none focus:ring-2 focus:ring-white w-full sm:w-[400px] bg-black"/>
+    
+    <!-- Botón Empezar -->
+    <button 
+      class="p-2 bg-red-700 text-lg text-white rounded-3xl hover:bg-red-800 focus:outline-none w-full sm:w-[200px] font-bold transition-colors"><a 
+        href="https://www.netflix.com/signup/registration?previousMode=welcome&locale=es-ES" 
+        target="_blank"
+        class="block w-full text-center">Empezar ></a>
+    </button>
   </div>
+</div>
+
 
 <!-- Más información -->
 <div class="flex justify-center items-center mt-10 px-4">
@@ -263,6 +270,7 @@
   </div>
 </div>
 
+
 <!-- Preguntas frecuentes -->
 <p class="sm:ml-10 md:ml-16 lg:ml-24 text-white mt-4 text-2xl sm:text-3xl md:text-4xl font-bold" id="preguntas">Preguntas frecuentes</p>
 
@@ -273,7 +281,7 @@
    <div>
      <input type="checkbox" id="accordion1" class="hidden peer" />
      <label for="accordion1" class="w-full text-left bg-gray-800 p-4 text-lg font-semibold text-white rounded-md  flex justify-between items-center hover:bg-gray-600">
-       ¿Quñe es Netflix?
+       ¿Que es Netflix?
        <span class="text-3xl">+</span>
      </label>
      <div class="peer-checked:block hidden p-4 bg-gray-700 rounded-md text-white">
@@ -364,46 +372,47 @@
       <!-- Primera columna -->
       <div class="space-y-2 text-center md:text-left flex flex-col text-base">
         <p>¿Preguntas? Llama al <a href="tel:900-759-106" class="hover:underline">900-759-106</a></p>
-        <a href="#" class="text-sm underline">Preguntas frecuentes</a>
-        <a href="#" class="text-sm underline">Inversores</a>
-        <a href="#" class="text-sm underline">Formas de ver</a>
-        <a href="#" class="text-sm underline">Información corporativa</a>
-        <a href="#" class="text-sm underline">Avisos legales</a>
+        <a href="https://help.netflix.com/es-es/node/412" class="text-sm underline">Preguntas frecuentes</a>
+        <a href="https://help.netflix.com/es-es/node/412" class="text-sm underline">Inversores</a>
+        <a href="https://help.netflix.com/es-es/node/412" class="text-sm underline">Formas de ver</a>
+        <a href="https://help.netflix.com/es-es/node/412" class="text-sm underline">Información corporativa</a>
+        <a href="https://help.netflix.com/es-es/node/412" class="text-sm underline">Avisos legales</a>
         <!-- Botón de idioma -->
         <div class="relative">
-          <select class="text-white border border-white text-sm px-3 py-1 rounded-lg mt-6 mb-6 focus:ring-2 focus:ring-black focus:outline-none bg-[#230818] focus:bg-white focus:text-black">
+          <select 
+            class="text-white border border-white text-sm px-3 py-1 rounded-lg mt-6 mb-6 bg-[#230818] focus:bg-white focus:text-black focus:outline-none focus:ring-2 focus:ring-white">
             <option value="es" selected>Español</option>
             <option value="en">Inglés</option>
           </select>
         </div>
-
+        
         <p>Netflix España</p>
       </div>
   
       <!-- Segunda columna -->
       <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
-        <a href="#">Centro de ayuda</a>
-        <a href="#">Empleo</a>
-        <a href="#">Términos de uso</a>
-        <a href="#">Contáctanos</a>
-        <a href="#">Solo en Neftlix</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Centro de ayuda</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Empleo</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Términos de uso</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Contáctanos</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Solo en Neftlix</a>
       </div>
   
       <!-- Tercera columna -->
       <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
-        <a href="#">Cuentas</a>
-        <a href="#">Canjear tarjetas regalo</a>
-        <a href="#">Privacidad</a>
-        <a href="#">Prueba de velocidad</a>
-        <a href="#">Opciones de anuncios</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Cuentas</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Canjear tarjetas regalo</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Privacidad</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Prueba de velocidad</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Opciones de anuncios</a>
       </div>
   
       <!-- Cuarta columna -->
       <div class="space-y-2 text-center md:text-left flex flex-col underline text-sm">
-        <a href="#">Zona de presa</a>
-        <a href="#">Comprar tarjetas regalo</a>
-        <a href="#">Preferencias de cookies</a>
-        <a href="#">Garantía legal</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Zona de presa</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Comprar tarjetas regalo</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Preferencias de cookies</a>
+        <a href="https://help.netflix.com/es-es/node/412" target="_blank">Garantía legal</a>
       </div>
     </div>
   </footer>

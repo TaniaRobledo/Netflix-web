@@ -1,0 +1,10 @@
+Página Netflix desarrollada con Tailwind.
+Explicación de las distintas páginas:
+
+Botón 'Iniciar sesión' te lleva la página que contiene el formulario, para volver a la página principal hay que clickar sobre el logo rojo de la parte izquierda de Netflix.
+
+En la primera página en el botón 'mas información' que se encuentra debajo del input de dirección de correo, tenemos la tercera página, para volver atrás igual que en la página anterior clickamos sobre el logo rojo de la parte izquierda de Netflix.
+
+En la página principal el menú esta formado por distintos ids que te llevan a cada parte correspondiente de la página.
+
+URL de GitHub --> https://github.com/TaniaRobledo/Netflix-web

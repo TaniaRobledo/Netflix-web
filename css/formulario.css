@@ -6,7 +6,7 @@
 
 
   select:focus {
-    background-color: white; 
+    background-color: black; 
     color: black;          
   }
 
@@ -14,3 +14,21 @@
   select option {
     text-align: center;  
   }
+
+  .input_formulario {
+    border: 2px solid white; 
+
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .input_formulario:valid {
+    border: 2px solid green;
+  }
+  
+  .input_formulario:invalid {
+    border: 2px solid red 
+  }
+  
